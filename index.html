@@ -1,0 +1,274 @@
+<!-- Use as cdn -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard | painel de controle | matheus manuel</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a href="" class="logo">
+            <i class="bi bi-lightbulb"></i>
+            <span>logo</span>
+        </a>
+        <ul class="menu">
+            <li class="active"><a href=""><i class="bi bi-house-fill"></i><span>Dashborad</span></a>
+            </li>
+            <!-- 2 -->
+            <li>
+                <a href="">
+                    <i class="bi bi-people-fill"></i>
+                    <span>Clientes</span>
+                </a>
+            </li>
+            <!-- 3 -->
+            <li>
+                <a href="">
+                    <i class="bi bi-ui-radios-grid"></i>
+                    <span>Projectos</span>
+                </a>
+            </li>
+            <!-- 4 -->
+            <li>
+                <a href="">
+                    <i class="bi bi-ui-checks"></i>
+                    <span>Ordens</span>
+                </a>
+            </li>
+            <!-- 5 -->
+            <li>
+                <a href="">
+                    <i class="bi bi-cash"></i>
+                    <span>Receitas</span>
+                </a>
+            </li>
+            <!-- 6 -->
+            <li>
+                <a href="">
+                    <i class="bi bi-gear"></i>
+                    <span>Conta</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="content">
+        <header class="header">
+            <button type="button" class="button toogle-menu active">
+                <i class="bi bi-list"></i>
+                <span>Dashborad</span>
+            </button>
+            <form action="" class="form">
+                <input type="text" placeholder="Busca">
+                <button type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            <div class="box-perfil">
+                <img src="img/perfil.jpg" alt="">
+                <p class="name">
+                    Matheus
+                    <span>Admin</span>
+                </p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container-fluid container-content cards">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="desc">
+                                <span>100</span>
+                                <p>Clientes</p>
+                            </div>
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="desc">
+                                <span>230</span>
+                                <p>Projectos</p>
+                            </div>
+                            <i class="bi bi-ui-radios"></i>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="desc">
+                                <span>320</span>
+                                <p>Ordens</p>
+                            </div>
+                            <i class="bi bi-ui-checks"></i>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="desc">
+                                <span>R$ 100K</span>
+                                <p>Receitas</p>
+                            </div>
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid container-content charts">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="card shadow">
+                            <canvas class="shadow" id="charClientes" width="400" height="250">
+
+                            </canvas>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="card shadow">
+                            <canvas class="shadow" id="charReceitas" width="400" height="250">
+
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid container-content tables">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-12">
+                        <h3 class="title">Projectos recentes</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="">
+                                    <tr>
+                                        <th scope="col">Nome do Projecto</th>
+                                        <th scope="col">Departamento</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Titulo do projecto</td>
+                                        <td>Dev</td>
+                                        <td><span class="sty1"></span>Andamento</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Titulo do projecto</td>
+                                        <td>Design</td>
+                                        <td><span class="sty1"></span>Andamento</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Titulo do projecto</td>
+                                        <td>design</td>
+                                        <td><span class="sty2"></span>Finalizado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Titulo do projecto</td>
+                                        <td>Dev</td>
+                                        <td><span class="sty3"></span>testes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Titulo do projecto</td>
+                                        <td>Dev</td>
+                                        <td><span class="sty2"></span>Finalizado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Titulo do projecto</td>
+                                        <td>Design</td>
+                                        <td><span class="sty1"></span>Andamentos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Titulo do projecto</td>
+                                        <td>Dev</td>
+                                        <td><span class="sty3"></span>testes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <h3 class="title">Novos Clientes</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="img/perfil.jpg" alt=""></td>
+                                        <td>Matheus</td>
+                                        <td>
+                                            <a href=""><i class="bi bi-person-circle"></i></a>
+                                            <a href=""><i class="bi bi-envelope"></i></a>
+                                            <a href=""><i class="bi bi-telephone-outbound"></i></a>
+                                        </td>
+                                    </tr>
+                                    <td><img src="img/perfil.jpg" alt=""></td>
+                                    <td>Matheus</td>
+                                    <td>
+                                        <a href=""><i class="bi bi-person-circle"></i></a>
+                                        <a href=""><i class="bi bi-envelope"></i></a>
+                                        <a href=""><i class="bi bi-telephone-outbound"></i></a>
+                                    </td>
+                                    </tr>
+                                    <td><img src="img/perfil.jpg" alt=""></td>
+                                    <td>Matheus</td>
+                                    <td>
+                                        <a href=""><i class="bi bi-person-circle"></i></a>
+                                        <a href=""><i class="bi bi-envelope"></i></a>
+                                        <a href=""><i class="bi bi-telephone-outbound"></i></a>
+                                    </td>
+                                    </tr>
+                                    <td><img src="img/perfil.jpg" alt=""></td>
+                                    <td>Matheus</td>
+                                    <td>
+                                        <a href=""><i class="bi bi-person-circle"></i></a>
+                                        <a href=""><i class="bi bi-envelope"></i></a>
+                                        <a href=""><i class="bi bi-telephone-outbound"></i></a>
+                                    </td>
+                                    </tr>
+                                    <td><img src="img/perfil.jpg" alt=""></td>
+                                    <td>Matheus</td>
+                                    <td>
+                                        <a href=""><i class="bi bi-person-circle"></i></a>
+                                        <a href=""><i class="bi bi-envelope"></i></a>
+                                        <a href=""><i class="bi bi-telephone-outbound"></i></a>
+                                    </td>
+                                    </tr>
+                                    <td><img src="img/perfil.jpg" alt=""></td>
+                                    <td>Matheus</td>
+                                    <td>
+                                        <a href=""><i class="bi bi-person-circle"></i></a>
+                                        <a href=""><i class="bi bi-envelope"></i></a>
+                                        <a href=""><i class="bi bi-telephone-outbound"></i></a>
+                                    </td>
+                                    </tr>
+                                    <td><img src="img/perfil.jpg" alt=""></td>
+                                    <td>Matheus</td>
+                                    <td>
+                                        <a href=""><i class="bi bi-person-circle"></i></a>
+                                        <a href=""><i class="bi bi-envelope"></i></a>
+                                        <a href=""><i class="bi bi-telephone-outbound"></i></a>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>Matheus 2021</span>
+    </footer>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/script.js"></script>c
+    <script src="js/chart.js"></script>
+
+</body>
+</html>
